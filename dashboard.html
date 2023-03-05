@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="dashboard.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    
+    <!-- .... HEADER .... -->
+    <header class="header">
+        <div class="logo"><h1>EazyLeadz</h1></div>
+        
+        <div class="header_right">
+            <div class="lang">
+                <select name="" id="">
+                    <option value="">Select Language</option>
+                    <option value="">America</option>
+                    <option value="">Berlin</option>
+                </select>
+            </div>
+            <div class="help_dropdown">Resources & Help <i class="fa-solid fa-chevron-down"></i></div>
+
+            <!-- .... RESOURSE & HELP DROPDOWN ..... -->
+            <div class="help_dropdown_container">
+                <a href=""><i class="fa-solid fa-video"></i> &nbsp;&nbsp;Training</a>
+                
+                <a href=""><i class="fa-sharp fa-solid fa-circle-question item_icon"></i>&nbsp;&nbsp;Help Articles</a>
+
+                <a href=""><i class="fa-solid fa-comments"></i>&nbsp;&nbsp;Chat Up Support</a>
+                <a href=""> <i class="fa-solid fa-trophy item_icon"></i>&nbsp;&nbsp;Bonuses</a>
+            </div>
+
+            <!-- .... PROFILE .... -->
+            <div class="profile_container" id="profile">
+                <i class="fa-solid fa-circle-user"></i>&nbsp;
+                <p class="my_account_text">My Account&nbsp;&nbsp;<i style="font-size: 12px;" class="fa-solid fa-chevron-down"></i></p>
+            </div>
+
+                    <!-- .... PROFILE DROPDOWN ..... -->
+            <div class="profile-dropdown" id="profile-dropdown">
+                <a href="profile.html" class="profile-dropdown-item">
+                    <div class="profile-icon">
+                        <i class="fa-solid fa-circle-user item_icon"></i>
+                    </div>
+                    <div class="profile-details">
+                        <p>My Profile</p>
+                    </div>
+                </a>
+                <a href="profile.html" class="profile-dropdown-item">
+                    <div class="profile-icon">
+                        <i class="fa-solid fa-lock item_icon"></i>
+                    </div>
+                    <div class="profile-details">
+                        <p>Change Password</p>
+                    </div>
+                </a>
+
+                <a href="" class="profile-dropdown-item">
+                    <div class="profile-icon">
+                        <i class="fa-solid fa-right-from-bracket item_icon"></i>
+                    </div>
+                    <div class="profile-details">
+                        <p>Logout</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ... SIDEBAR AND CONTENT ... -->
+    <div class="sidebar_and_content">
+
+        <!-- ... Sidebar ... -->
+        <div class="sidebar">
+            <ul>
+                <li class="active_page">
+                    <a href="dashboard.html">
+                        <span class="icon"><i class="fa-solid fa-house"></i>&nbsp;&nbsp;</span>
+                        <span class="item">Welcome</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="icon"><i class="fa-solid fa-table-list"></i>&nbsp;&nbsp;</span>
+                        <span class="item">Lead Form</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="leadFunnels.html">
+                        <span class="icon"><i class="fa-sharp fa-solid fa-filter"></i>&nbsp;&nbsp;</span>
+                        <span class="item">Lead Funnels</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="icon"><i class="fa-sharp fa-solid fa-file-lines"></i>&nbsp;&nbsp;</span>
+                        <span class="item">Lead Pages</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="">
+                        <span class="icon"><i class="fa-solid fa-dollar-sign"></i>&nbsp;&nbsp;</span>
+                        <span class="item">Monetization Kit</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="icon"><i class="fa-solid fa-users"></i>&nbsp;&nbsp;</span>
+                        <span class="item">Team</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="icon"><i class="fa-solid fa-credit-card"></i>&nbsp;&nbsp;</span>
+                        <span class="item">Reseller</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="">
+                        <span class="icon"><i class="fa-sharp fa-solid fa-sliders"></i>&nbsp;&nbsp;</span>
+                        <span class="item">Integrations</span>
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="">
+                        <span class="icon"><i class="fa-solid fa-arrow-right-from-bracket"></i>&nbsp;</span>
+                        <span class="item">Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ... content ... -->
+        <div class="content">
+            <div class="welcome_msg">
+                <p>Welcome <span>Victor</span>, watch the video below to get started!</p>
+            </div>
+            <!-- Video Container -->
+            <div class="video_container">  
+                <iframe src="https://www.youtube.com/embed/0BIaDVnYp2A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="unlock_access_button">
+                <a href="" class="button">
+                    <p>Unlock Access</p>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

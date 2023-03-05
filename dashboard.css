@@ -1,0 +1,497 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.header{
+    height: 70px;
+    width: 100vw;
+    position: fixed;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(243, 242, 242);
+}
+
+.header .logo{
+    background-color: #2e00c7;
+    height: 70px;
+    width: 300px;
+    padding-left: 25px;
+    padding-top: 16px;
+}
+
+.header .logo h1{
+    color: white;
+}
+
+.header_right{
+    height: 70px;
+    width: 540px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_right .lang select{
+    outline: none;
+    border:  none;
+    background-color: rgb(243, 242, 242);
+    font-size: 16px;
+    cursor: pointer;
+}
+.header_right .lang select:hover{
+    color: #2e00c7;
+}
+
+.header_right .help_dropdown{
+    cursor: pointer;
+}
+.header_right .help_dropdown:hover{
+    color: #2e00c7;
+}
+
+
+
+.header .profile_container{
+    display: flex;
+    align-items: center;
+    padding-right: 40px;
+    cursor: pointer;
+}
+.header .profile_container:hover{
+    color: #2e00c7;
+}
+
+.header .profile_container .fa-circle-user{
+    font-size: 18px;
+}
+
+.header .profile_container .my_account_text{
+    display: flex;
+    align-items: center;
+}
+
+
+/* ...Profile Dropdown ... */
+.profile-dropdown{
+    position: absolute;
+    right: 35px;
+    top: 50px;
+    width: 300px;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease-in-out;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.profile-dropdown .profile-dropdown-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+
+}
+.profile-dropdown .profile-dropdown-item:hover{
+    color: #2e00c7;
+}
+
+
+
+
+.profile-dropdown .profile-dropdown-item .profile-icon .item_icon{
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.profile-dropdown .profile-dropdown-item .profile-details p{
+    margin-top: 0;
+}
+
+.profile-dropdown.show{
+   top: 80px;
+   opacity: 1;
+   pointer-events: visible;  
+}
+
+
+.help_dropdown i{
+    font-size: 12px;
+    font-weight:bolder;
+}
+
+/* ... HELP DROPDOWN ... */
+.help_dropdown_container{
+    position: absolute;
+    right: 186px;
+    top: 50px;
+    width: 300px;
+    border-radius: 10px;
+    padding: 25px;
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease-in-out;
+    opacity: 0;
+    pointer-events: none;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.help_dropdown_container a{
+    text-decoration: none;
+    color: black;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.help_dropdown_container a:hover{
+    color: #2e00c7;
+}
+
+.help_dropdown_container a i{
+    font-size: 14px;
+}
+
+.help_dropdown_container.show{
+    top: 80px;
+    opacity: 1;
+    pointer-events: visible; 
+}
+
+
+
+
+
+
+
+
+
+/* ... SIDEBAR AND CONTENT ... */
+
+.sidebar_and_content{
+    display: flex;
+}
+
+.sidebar_and_content .sidebar{
+    top: 70px;
+    left: 0;
+    position: fixed;
+    width: 300px;
+    height: 100vh;
+    background-color: #2e00c7;
+    padding-top: 30px;
+    border-left: 20px solid #2e00c7;
+}
+
+.sidebar ul{
+
+}
+
+.sidebar ul li{
+    list-style-type: none;
+    height: 54px;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar ul li:hover{
+    background-color: #fff;
+    border-radius: 30px 0 0 30px;
+    color: #2e00c7;
+}
+
+ 
+.sidebar ul li.active_page, .sidebar ul li.active_page a{
+    background-color: #fff;
+    border-radius: 30px 0 0 30px;
+    color: #2e00c7;
+}
+
+.sidebar ul li:nth-child(9){
+    position: absolute;
+    top: 80%;
+    width: 100%;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar ul li:hover a{
+    color: #2e00c7;
+}
+
+
+
+
+
+.sidebar_and_content .content{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 300px;
+    width: 100vw;
+    padding: 0 30px;
+}
+
+
+.content .video_container{
+    width: 800px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .video_container iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.content .welcome_msg{
+    margin-bottom: 20px;
+}
+
+.content .welcome_msg p{
+    font-size: 32px;
+    color: #16015a;
+    font-weight: 500;
+}
+
+
+/* ... Unlock Access Button ..... */
+.unlock_access_button{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.unlock_access_button .button{
+    background-color: red;
+    border: none;
+    width: 280px;
+    height: 60px;
+    border-radius: 30px;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    text-decoration:none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.unlock_access_button .button p{
+    transition: all 0.4s ease-in-out;
+}
+
+.unlock_access_button .button p:hover{
+    margin-left: 12px;
+}
+
+
+
+
+
+
+/* ...... MEDIA QUERIES ...... */
+@media screen and (max-width:1330px) {
+    
+    .content .video_container{
+        width: 700px;
+        height: 350px;
+        
+    }
+    
+    
+    
+    .content .welcome_msg{
+        
+    }
+    
+    
+    .content .welcome_msg p{
+        font-size: 30px;
+    }
+    
+    
+    }
+    
+    
+    @media screen and (max-width:1199px) {
+        
+        .content .video_container{
+            width: 600px;
+            height: 350px;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        
+        
+        
+        .content .welcome_msg{
+            margin-bottom: 10px;
+        }
+        
+        
+        .content .welcome_msg p{
+            font-size: 24px;
+        }
+        
+        
+        
+    }
+    
+    
+    
+    
+    /* ..... Mobile Responsiveness ...... */
+    
+    @media screen and (max-width: 999px){
+         
+        .content .video_container{
+            width: 600px;
+            height: 350px;
+            padding: 15px;
+        }
+        
+        
+        
+        .content .welcome_msg{
+
+    
+        }
+        
+        
+        .content .welcome_msg p{
+            font-size: 24px;
+            margin-left: 0;
+        }
+    
+    }
+    
+    
+    
+    
+    @media screen and (max-width: 788px){
+    
+         
+        .content .video_container{
+            width: 500px;
+            height: 300px;
+            background-color: #003559;
+            border-radius: 10px;
+            padding: 10px;  
+        }
+        
+        
+        
+        .content .welcome_msg{
+            margin-left: 0px;
+            margin-bottom: 20px;
+    
+        }
+        
+        
+        .content .welcome_msg p{
+            font-size: 20px;
+        }
+    
+            
+        .unlock_access_button .button{
+            width: 200px;
+            height: 50px;
+            border-radius: 25px;
+            font-size: 18px;
+        }
+    
+    
+    }
+    
+    
+    @media screen and (max-width:600px) {
+        
+          
+        .content .video_container{
+            width: 420px;
+            height: 220px;
+            background-color: #003559;
+            border-radius: 5px;
+            padding: 5px;  
+            margin-top: -180px;
+        }
+    
+        
+        
+        .content .welcome_msg p{
+            font-size: 16px;
+            margin-top: -190px;
+        }
+    
+            
+        .unlock_access_button .button{
+            width: 168px;
+            height: 44px;
+            border-radius: 25px;
+            font-size: 15px;
+        }
+    
+    
+    }
+    
+    
+    
+    @media screen and (max-width:440px) {
+    
+        .content .video_container{
+            width: 300px;
+            height: 140px;
+            background-color: #003559;
+            border-radius: 6px;
+            padding: 4px; 
+            margin-top: -140px; 
+        }
+    
+        
+            
+        .unlock_access_button .button{
+            width: 160px;
+            height: 40px;
+            border-radius: 25px;
+            font-size: 14px;
+        }
+    
+        .content .welcome_msg p{
+            font-size: 16px;
+            width: 300px;
+            margin-top: -170px;
+        }
+    
+    }
