@@ -139,7 +139,7 @@
     top: 50px;
     width: 300px;
     border-radius: 10px;
-    padding: 25px;
+    padding: 15px 25px 15px 30px;
     background-color: white;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     transition: all 0.4s ease-in-out;
