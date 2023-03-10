@@ -107,7 +107,7 @@
 }
 
 .background_video{
-    position: absolute;
+    position: fixed;
     right: 0;
     bottom: 0;
     z-index: -1;
@@ -123,8 +123,18 @@
 
 @media (max-aspect-ratio: 16/9) {
     .background_video{
-        width: auto;
+        width: 100%;
         height: 100%;
     }
+}
+
+@media (max-width: 999px) {
+     .background_video{
+        display: none;
+     }
+
+     .container{
+        
+     }
 }
 
